@@ -1,0 +1,343 @@
+/* FONTS---------------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap');
+
+
+@font-face {
+  font-family: "distant stroke";
+  src: url(../fonts/Distant_Stroke.otf);
+}
+
+/* RESET DE MARGIN Y PADDING------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML Y BODY-------------------------------------------------------------------- */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color:rgb(32, 32, 32) ;
+ }
+
+/* ELEMENTOS Y PROPIEDADES EN COMUN ----------------------------------------------- */
+
+/* Flexbox Principal */
+.flexPrincipal {
+  height: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+/* Header General */
+
+.flexHeader {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+
+.tituloUno {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+}
+
+.tituloDos {
+  font-family: "distant stroke";
+  color: white;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* Menu nav bar general */
+.navegador1 {
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.navegador1 ul {
+  list-style-type:none;
+}
+
+.navegador1 li {
+  display: inline;
+  border-right: white solid 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navegador1 li a {
+  color: white;
+  text-decoration: none; 
+}
+
+  .navegador1 li a:hover {
+  background-color: #333333; 
+  color: #ffffff;
+}
+
+/* Footer */
+.flexFooter {
+  height: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navFooter {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navFooter ul {
+  list-style-type:none;
+}
+
+.navFooter li {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navFooter li a {
+  color: rgb(175, 175, 175);
+  text-decoration: none;
+  font-size: 14px; 
+}
+
+  .navFooter li a:hover {
+  background-color: #333333; 
+  color: #ffffff;
+}
+
+.infoFooter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: rgb(165, 165, 165);
+}
+
+/* PAGINA INDEX------------------------------------------------------------------- */
+ 
+/* Index */
+.flexIndex {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Header */
+.headerIndex {
+display: flex;
+flex-flow: column wrap;
+max-width: 50%;
+justify-content: center;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.headerIndex h1 {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+}
+
+.headerIndex h2 {
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count:initial;
+}
+
+.bienvenidos {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin: 40px;
+}
+
+/* Imagen */
+.imagen {
+  display: flex;
+  max-width: 50%;
+}
+
+.imagen img {
+  object-fit: cover;
+  animation-name: aparecer;
+  animation-duration: 8s;
+
+}
+
+
+/* PAGINA DE CONTACTO--------------------------------------------------------------- */
+.flexForm {
+  height: 75%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.formulario {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.formulario label {
+  margin: 10px 0px 0px 0px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-size: 20px;
+}
+
+.formulario input {
+  margin-top: 0px;
+  padding: 10x;
+  font-size: 15px;
+}
+
+.formulario textarea {
+  margin: 20px 0px 0px 0px;
+  padding: 10x;
+}
+
+.flexButton {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+
+}
+
+.formulario button {
+  margin: 10px;
+  padding: 10x;
+  font-size: 15px;
+}
+
+/* PÁGINA ACERCA DE MI------------------------------------------------------------- */
+.acercaDeMi {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+  text-align: center;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+/* PAGINA RECITALES ----------------------------------------------------------------*/
+.galeria {
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+
+}
+
+.columna {
+  flex: 25%;
+  padding: 5px;
+}
+
+
+
+
+.columna img {
+  width: 100%;
+  margin-top: 5px;
+  object-fit: cover;
+}
+
+
+/* MEDIA QUERIES------------------------------------------------------------------- */
+
+/* VERSION TABLETA */
+@media (max-width: 1023px) {
+  .flexIndex {
+    height: 95%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  header {
+  display: flex;
+  height: 50%;
+  min-width: 100%;
+  align-items: center;
+  }
+
+  .imagen {
+    display: flex;
+    height: 50%;
+    min-width: 100%;
+  }
+  
+  .imagen img {
+    object-fit: cover;
+  }
+
+  .columna {
+    flex: 50%;
+    
+  }
+}
+
+
+/* VERSION MOBILE */
+@media (max-width: 767px) {
+  .navFooter {
+    display: none;
+  }
+  .infoFooter {
+    text-align: center;
+    font-size: 10px;
+  }
+  .columna {
+    flex: 100%;
+    
+  }
+}
