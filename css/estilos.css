@@ -20,16 +20,8 @@
   box-sizing: border-box;
 }
 
-/* HTML Y BODY-------------------------------------------------------------------- */
-
-/* html {
-  height: 100%;
-  width: 100%;
-} */
-
+/* BODY--------------------------------------------------------------------------- */
 body {
-  /* height: 100%;
-  width: 100%; */
   background-color:rgb(32, 32, 32) ;
  }
 
@@ -50,7 +42,6 @@ body {
   justify-content:flex-start;
 }
 
-
 .tituloUno {
   font-family: 'Bebas Neue', cursive;
   color: white;
@@ -66,88 +57,7 @@ body {
   font-size: 50px;
   line-height: 30px;
   text-align: center;
-}
-
-/* Menu nav bar general */
-.navegador1 {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
-.navegador1 ul {
-  list-style-type:none;
-}
-
-.navegador1 li {
-  display: inline;
-  border-right: white solid 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.navegador1 li a {
-  color: white;
-  text-decoration: none; 
-}
-
-  .navegador1 li a:hover {
-  background-color: #333333; 
-  color: #ffffff;
-}
-
-/* Footer */
-.flexFooter {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navFooter {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.navFooter ul {
-  margin: 0;
-  list-style-type:none;
-}
-
-.navFooter li {
-  display: inline;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.navFooter li a {
-  color: rgb(175, 175, 175);
-  text-decoration: none;
-  font-size: 14px; 
-}
-
-  .navFooter li a:hover {
-  background-color: #333333; 
-  color: #ffffff;
-}
-
-.infoFooter {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  color: rgb(165, 165, 165);
-}
-
-/* PAGINA INDEX------------------------------------------------------------------- */
- 
-/* Index */
-.flexIndex {
-  height: 100vh;
-  display: flex;
-  flex-flow: row wrap;
+  padding-bottom: 10px;
 }
 
 /* NavBar de Bootstrap */
@@ -181,6 +91,59 @@ body {
   color: #ffffff;
 }
 
+/* Footer */
+.flexFooter {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.navFooter {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navFooter ul {
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+}
+
+.navFooter li {
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navFooter li a {
+  color: rgb(175, 175, 175);
+  text-decoration: none;
+  font-size: 14px; 
+}
+
+  .navFooter li a:hover {
+  background-color: #333333; 
+  color: #ffffff;
+}
+
+.infoFooter {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: rgb(165, 165, 165);
+}
+
+
+/* PAGINA INDEX------------------------------------------------------------------- */
+ 
+/* Index */
+.flexIndex {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+}
 
 /* Header */
 .headerIndex {
@@ -321,15 +284,37 @@ justify-content: space-between;
 
 .columna {
   flex: 25%;
-  padding: 5px;
 
 }
 
 .columna img {
   width: 100%;
-  margin-top: 5px;
+  padding: 3px;
   object-fit: cover;
 }
+
+/* PAGINA BOOKS-------------------------------------------------------------------- */
+.row {
+  margin: 3px;
+}
+
+.col-xl-3 {
+  padding: 0;
+}
+.col-md-6 {
+  padding: 0;
+}
+
+.col-sm-12 {
+  padding: 0;
+}
+.row img {
+  width: 100%;
+  padding: 3px;
+}
+
+
+
 
 
 /* MEDIA QUERIES------------------------------------------------------------------- */
@@ -362,6 +347,15 @@ justify-content: space-between;
   .navbar {
     padding: 40px;
   }
+
+  .navFooter li a {
+  font-size: 10px;
+}
+
+  .infoFooter {
+  font-size: 8px;
+}
+
 }
 
 /* VERSION TABLETA */
