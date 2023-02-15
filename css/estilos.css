@@ -348,6 +348,12 @@ justify-content: space-between;
     padding: 40px;
   }
 
+  .navbar li a:hover {
+    background-color: rgba(32, 32, 32, 0); 
+    color: #b1b1b1;
+    font-size: 20px;
+  }
+
   .navFooter li a {
   font-size: 10px;
 }
@@ -355,6 +361,7 @@ justify-content: space-between;
   .infoFooter {
   font-size: 8px;
 }
+
 
 }
 
