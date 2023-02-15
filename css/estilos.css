@@ -37,7 +37,6 @@ body {
 
 /* Flexbox Principal */
 .flexPrincipal {
-  /* height: 100%; */
   display: flex;
   flex-flow: column wrap;
 }
@@ -102,7 +101,6 @@ body {
 
 /* Footer */
 .flexFooter {
-  height: 5%;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -115,6 +113,7 @@ body {
 }
 
 .navFooter ul {
+  margin: 0;
   list-style-type:none;
 }
 
@@ -136,6 +135,7 @@ body {
 }
 
 .infoFooter {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: rgb(165, 165, 165);
@@ -150,6 +150,38 @@ body {
   flex-flow: row wrap;
 }
 
+/* NavBar de Bootstrap */
+.navbar {
+  background-color:rgb(32, 32, 32) ;
+}
+
+.navbar-brand svg {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar li a {
+  color: white;
+  padding: 0;
+  transition: all 0.5s;
+}
+.navbar li a:hover {
+  background-color: #2b2b2b; 
+  color: #b1b1b1;
+  font-size: 20px;
+}
+
+.navbar li a:visited {
+  color: #ffffff;
+}
+
+
 /* Header */
 .headerIndex {
   height: 95%;
@@ -157,6 +189,7 @@ body {
   flex: 50%;
   flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
 }
 
 @keyframes aparecer {
@@ -178,6 +211,12 @@ body {
   animation-name: aparecer;
   animation-duration: 4s;
   animation-iteration-count:initial;
+}
+
+.headerIndex p {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
 }
 
 .bienvenidos {
@@ -298,11 +337,16 @@ justify-content: space-between;
 /* VERSION MOBILE */
 @media (max-width: 600px) {
 
+  .flexIndex {
+    height: auto;
+  }
+
   .headerIndex {
     height: 45%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: normal;
   }
 
   .imagen {
@@ -313,6 +357,10 @@ justify-content: space-between;
 
   .columna {
     flex: 100%;
+  }
+
+  .navbar {
+    padding: 40px;
   }
 }
 
