@@ -1,49 +1,16 @@
-/* FONTS---------------------------------------------------------------------------*/
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap');
-
-
-@font-face {
-  font-family: "distant stroke";
-  src: url(../fonts/Distant_Stroke.otf);
-}
-
-/* RESET DE MARGIN Y PADDING------------------------------------------------------ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY--------------------------------------------------------------------------- */
-body {
-  background-color:rgb(32, 32, 32) ;
- }
-
-/* ELEMENTOS Y PROPIEDADES EN COMUN ----------------------------------------------- */
-
-/* Flexbox Principal */
-.flexPrincipal {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-/* Header General */
-
+/* HEADER GENERAL------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap");
 .flexHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
 .tituloUno {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: white;
   font-weight: normal;
   font-size: 60px;
@@ -60,38 +27,40 @@ body {
   padding-bottom: 10px;
 }
 
-/* NavBar de Bootstrap */
-.navbar {
-  background-color:rgb(32, 32, 32) ;
+/* HEADER INDEX------------------------------------------------------------------------- */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.headerIndex {
+  height: 95%;
+  display: flex;
+  flex: 50%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.headerIndex h1 {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+}
+.headerIndex h2 {
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: initial;
+}
+.headerIndex p {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
 }
 
-.navbar-brand svg {
-  width: 25px;
-  height: 25px;
-  color: #ffffff;
-  margin-bottom: 3px;
-}
-
-.navbar-brand {
-  padding: 0;
-}
-
-.navbar li a {
-  color: white;
-  padding: 0;
-  transition: all 0.5s;
-}
-.navbar li a:hover {
-  background-color: #2b2b2b; 
-  color: #b1b1b1;
-  font-size: 20px;
-}
-
-.navbar li a:visited {
-  color: #ffffff;
-}
-
-/* Footer */
+/* FOOTER------------------------------------------------------------------------ */
 .flexFooter {
   width: 100%;
   display: flex;
@@ -102,88 +71,151 @@ body {
 }
 
 .navFooter {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .navFooter ul {
   margin: 0;
   padding: 0;
-  list-style-type:none;
+  list-style-type: none;
 }
-
 .navFooter li {
   display: inline;
   padding-right: 10px;
   padding-left: 10px;
 }
-
 .navFooter li a {
   color: rgb(175, 175, 175);
   text-decoration: none;
-  font-size: 14px; 
+  font-size: 14px;
 }
-
-  .navFooter li a:hover {
-  background-color: #333333; 
+.navFooter li a:hover {
+  background-color: #333333;
   color: #ffffff;
 }
 
 .infoFooter {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  color: rgb(165, 165, 165);
+  color: rgb(175, 175, 175);
 }
 
+/* FONTS------------------------------------------------------------------------ */
+@font-face {
+  font-family: "distant stroke";
+  src: url(../fonts/Distant_Stroke.otf);
+}
+/* RESET DE MARGIN Y PADDING-------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* PAGINA INDEX------------------------------------------------------------------- */
- 
-/* Index */
+/* BODY--------------------------------------------------------------------------- */
+body {
+  background-color: rgb(32, 32, 32);
+}
+
+/* FLEX PRINCIPAL----------------------------------------------------------------- */
+.flexPrincipal {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* FLEX INDEX ----------------------------------------------------------------------------- */
 .flexIndex {
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
 }
 
-/* Header */
-.headerIndex {
-  height: 95%;
+/* FORMULARIO----------------------------------------------------------------------------- */
+.flexForm {
+  height: 75%;
   display: flex;
-  flex: 50%;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
+.formulario {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  padding: 10px;
+  object-fit: cover;
+}
+.formulario label {
+  margin: 10px 0px 0px 0px;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-size: 20px;
+}
+.formulario input {
+  margin-top: 0px;
+  padding: 10x;
+  font-size: 15px;
+}
+.formulario textarea {
+  margin: 20px 0px 0px 0px;
+  padding: 10x;
+}
+.formulario button {
+  margin: 10px;
+  padding: 10x;
+  font-size: 15px;
 }
 
-.headerIndex h1 {
+.flexButton {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* IMAGEN DEL INDEX----------------------------------------------------------------- */
+.imagen {
+  height: 95%;
+  display: flex;
+  flex: 50%;
+}
+.imagen img {
+  width: 100%;
+  object-fit: cover;
   animation-name: aparecer;
-  animation-duration: 5s;
-  animation-iteration-count: initial;
+  animation-duration: 8s;
 }
 
-.headerIndex h2 {
+.imagen video {
+  width: 100%;
+  object-fit: cover;
   animation-name: aparecer;
-  animation-duration: 4s;
-  animation-iteration-count:initial;
+  animation-duration: 8s;
 }
 
-.headerIndex p {
-  animation-name: aparecer;
-  animation-duration: 5s;
-  animation-iteration-count: initial;
+/* GALERIA DE FOTOS RECITALES-------------------------------------------------------- */
+.galeria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
 }
 
+.columna {
+  flex: 25%;
+}
+.columna img {
+  width: 100%;
+  padding: 3px;
+  object-fit: cover;
+}
+
+/* PARRAFO BIENVENIDA INDEX--------------------------------------------------------- */
 .bienvenidos {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: lighter;
   font-size: 15px;
@@ -192,73 +224,7 @@ body {
   margin: 40px;
 }
 
-/* Imagen */
-.imagen {
-  height: 95%;
-  display: flex;
-  flex: 50%;
-}
-
-.imagen img {
-  width: 100%;
-  object-fit: cover;
-  animation-name: aparecer;
-  animation-duration: 8s;
-
-}
-
-
-/* PAGINA DE CONTACTO--------------------------------------------------------------- */
-.flexForm {
-  height: 75%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-.formulario {
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  flex-flow: column wrap;
-  color: white;
-  padding: 10px;
-  object-fit: cover;
-}
-
-.formulario label {
-  margin: 10px 0px 0px 0px;
-  padding-top: 10px;
-  padding-bottom: 2px;
-  font-size: 20px;
-}
-
-.formulario input {
-  margin-top: 0px;
-  padding: 10x;
-  font-size: 15px;
-}
-
-.formulario textarea {
-  margin: 20px 0px 0px 0px;
-  padding: 10x;
-}
-
-.flexButton {
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-
-}
-
-.formulario button {
-  margin: 10px;
-  padding: 10x;
-  font-size: 15px;
-}
-
-/* PÁGINA ACERCA DE MI------------------------------------------------------------- */
+/* PARRAFO ACERCA DE MI------------------------------------------------------------- */
 .acercaDeMi {
   display: flex;
   flex-direction: column;
@@ -266,41 +232,51 @@ justify-content: space-between;
   height: 50%;
   text-align: center;
   justify-content: space-around;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: white;
 }
 
-/* PÁGINA RECITALES ----------------------------------------------------------------*/
-.galeria {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px;
-
+/* NAVBAR BOOTSTRAP--------------------------------------------------------------------- */
+.navbar {
+  background-color: rgb(32, 32, 32);
+}
+.navbar li a {
+  color: white;
+  padding: 0;
+  transition: all 0.5s;
+}
+.navbar li a:hover {
+  background-color: #2b2b2b;
+  font-size: 20px;
+}
+.navbar li a:visited {
+  color: white;
 }
 
-.columna {
-  flex: 25%;
-
+.navbar-brand {
+  padding: 0;
+}
+.navbar-brand svg {
+  width: 25px;
+  height: 25px;
+  color: white;
+  margin-bottom: 3px;
 }
 
-.columna img {
-  width: 100%;
-  padding: 3px;
-  object-fit: cover;
-}
-
-/* PAGINA BOOKS-------------------------------------------------------------------- */
+/* GALERIA DE FOTOS BOOKS------------------------------------------------------------- */
 .row {
   margin: 3px;
+}
+.row img {
+  width: 100%;
+  padding: 3px;
 }
 
 .col-xl-3 {
   padding: 0;
 }
+
 .col-md-6 {
   padding: 0;
 }
@@ -308,24 +284,13 @@ justify-content: space-between;
 .col-sm-12 {
   padding: 0;
 }
-.row img {
-  width: 100%;
-  padding: 3px;
-}
 
-
-
-
-
-/* MEDIA QUERIES------------------------------------------------------------------- */
-
+/* MEDIA QUERIES----------------------------------------------------------------------- */
 /* VERSION MOBILE */
 @media (max-width: 600px) {
-
   .flexIndex {
     height: auto;
   }
-
   .headerIndex {
     height: 45%;
     display: flex;
@@ -333,55 +298,45 @@ justify-content: space-between;
     justify-content: center;
     align-items: normal;
   }
-
   .imagen {
     height: 45%;
     display: flex;
     flex: 100%;
   }
-
   .columna {
     flex: 100%;
   }
-
   .navbar {
     padding: 40px;
   }
-
   .navbar li a:hover {
-    background-color: rgba(32, 32, 32, 0); 
-    color: #b1b1b1;
+    background-color: #333333;
+    color: rgb(175, 175, 175);
     font-size: 20px;
   }
-
   .navFooter li a {
-  font-size: 10px;
-}
-
+    font-size: 10px;
+  }
   .infoFooter {
-  font-size: 8px;
+    font-size: 8px;
+  }
 }
-
-
-}
-
 /* VERSION TABLETA */
 @media (min-width: 601px) and (max-width: 900px) {
-
   .headerIndex {
     height: 45%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
   }
-
   .imagen {
     height: 45%;
     display: flex;
     flex: 100%;
   }
-
   .columna {
     flex: 50%;
   }
 }
+
+/*# sourceMappingURL=estilos.css.map */

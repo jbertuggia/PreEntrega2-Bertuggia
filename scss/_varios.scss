@@ -1,0 +1,67 @@
+/* RESET DE MARGIN Y PADDING-------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* BODY--------------------------------------------------------------------------- */
+  body {
+    background-color: $colorFondo;
+  }
+
+
+  /* FLEX PRINCIPAL----------------------------------------------------------------- */
+.flexPrincipal {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* FLEX INDEX ----------------------------------------------------------------------------- */
+.flexIndex {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* FORMULARIO----------------------------------------------------------------------------- */
+.flexForm {
+	height: 75%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.formulario {
+	font-family: $fontMontserrat;
+	display: flex;
+	flex-flow: column wrap;
+	color: $colorLetras;
+	padding: 10px;
+	object-fit: cover;
+	label {
+		margin: 10px 0px 0px 0px;
+		padding-top: 10px;
+		padding-bottom: 2px;
+		font-size: 20px;
+	}
+	input {
+		margin-top: 0px;
+		padding: 10x;
+		font-size: 15px;
+	}
+	textarea {
+		margin: 20px 0px 0px 0px;
+		padding: 10x;
+	}
+	button {
+		margin: 10px;
+		padding: 10x;
+		font-size: 15px;
+	}
+}
+.flexButton {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}

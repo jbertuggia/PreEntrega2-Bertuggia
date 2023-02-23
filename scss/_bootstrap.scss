@@ -1,0 +1,46 @@
+/* NAVBAR BOOTSTRAP--------------------------------------------------------------------- */
+
+.navbar {
+	background-color: $colorFondo;
+	li {
+		a {
+			color: $colorLetras;
+			padding: 0;
+			transition: all 0.5s;
+			&:hover {
+				background-color: $backgroundHover2;
+				font-size: 20px;
+			}
+			&:visited {
+				color: $colorLetras;
+			}
+		}
+	}
+}
+.navbar-brand {
+	svg {
+		width: 25px;
+		height: 25px;
+		color: $colorLetras;
+		margin-bottom: 3px;
+	}
+	padding: 0;
+}
+
+/* GALERIA DE FOTOS BOOKS------------------------------------------------------------- */
+.row {
+	margin: 3px;
+	img {
+		width: 100%;
+		padding: 3px;
+	}
+}
+.col-xl-3 {
+	padding: 0;
+}
+.col-md-6 {
+	padding: 0;
+}
+.col-sm-12 {
+	padding: 0;
+}
