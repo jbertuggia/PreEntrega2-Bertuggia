@@ -7,6 +7,7 @@
 	.flexIndex {
 		height: auto;
 	}
+
 	/* HEADER INDEX */
 	.headerIndex {
 		display: flex;
@@ -14,22 +15,37 @@
 		justify-content: center;
 		align-items: normal;
 	}
+
+	.botonInstaIndex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	/* FLEX HEADER GENERAL */
 	.flexHeader {
 		align-items: normal;
 	}
+
 	/* VIDEO DE PORTADA */
 	.video {
-		height: 45%;
 		display: flex;
 		flex: 100%;
+
+		video {
+			height: 39vh;
+		}
 	}
+
 	/* COLUMNA DE BOOK RECITALES */
 	.columna {
 		flex: 100%;
 	}
+
+	/* NAVBAR HEADER */
 	.navbar {
-		padding: 40px;
+		padding: 25px;
+
 		li {
 			a {
 				&:hover {
@@ -40,32 +56,52 @@
 			}
 		}
 	}
+
+	/* LINK INICIO NAVBAR */
+	.inicio {
+		display: none;
+	}
+
+	/* FOOTER */
 	.navFooter {
 		display: none;
 		align-items: center;
-		li {
-			a {
-				font-size: 10px;
+			li {
+				a {
+					font-size: 10px;
+				}
 			}
-		}
 	}
+
 	.infoFooter {
 		font-size: 8px;
 	}
 
-	/* LINK INICIO NAVBAR */
-.inicio {
-	display: none;
-}
-}
 
+	/* ENCABEZADO DEL PAG CONTACTO */
+	.conteinerForm {
+		height: auto;
+			label {
+				display: none;
+			}
+			h2 {
+				margin: 10px;
+			}
+	}
 
+	.flexPrincipal {
+		h3 {
+			margin: 0;
+		}
+	}
+}
 
 //--------------------------------------------------------------------------------------------------------------------
 
 
 /* VERSION TABLETA */
 @media (min-width: 601px) and (max-width: 900px) {
+
 	/* HEADER INDEX */
 	.headerIndex {
 		height: 45%;
@@ -73,20 +109,30 @@
 		flex-flow: column wrap;
 		justify-content: center;
 	}
+
 	/* VIDEO DE PORTADA */
 	.video {
 		height: 45%;
 		display: flex;
 		flex: 100%;
 	}
+
 	/* COLUMNA DE BOOK RECITALES */
 	.columna {
 		flex: 50%;
 	}
+
 	/* LOGO CAMARA NAVBAR */
 	.navbar-brand {
 		img {
 			display: none;
+		}
+	}
+
+	/* ENCABEZADO DEL PAG CONTACTO */
+	.conteinerForm {
+		h2 {
+			margin: 10px;
 		}
 	}
 }
@@ -100,11 +146,12 @@
 
 /* VERSION DESKTOP */
 @media (min-width:901px) {
-/* LOGO CAMARA NAVBAR */
-.navbar-brand {
-	img {
-		display: none;
+
+	/* LOGO CAMARA NAVBAR */
+	.navbar-brand {
+		img {
+			display: none;
+		}
 	}
-}
 
 }

@@ -25,7 +25,6 @@
 		border: 1px white solid;
 		border-radius: 6px;
 	}
-	
 }
 
 /* GALERIA DE FOTOS BOOKS Y RECITALES------------------------------------------------------- */
@@ -44,4 +43,35 @@
 }
 .col-sm-12 {
 	padding: 0;
+}
+
+/* FORMULARIO ------------------------------------------------------------------------------ */
+.flexPrincipal {
+ 	h3 {
+	margin-top: 25px;
+	font-family: $fontBebas;
+	font-size: 25px;
+	color: $colorLetras;
+	text-align: center;
+	}
+}
+.conteinerForm {
+	height: 65vh;
+		label {
+			font-family: $fontMontserrat;
+			color: $colorLetras;
+			font-weight: bold;	
+		}
+.btn {
+	margin: 5px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+		button {
+			padding: 5px;
+			background-color: $backgroundHover;
+			border: 1px solid $colorLetras;
+		}
+
+}	
 }

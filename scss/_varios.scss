@@ -15,6 +15,7 @@ body {
 .flexPrincipal {
 	display: flex;
 	flex-flow: column wrap;
+	align-items: center;
 }
 
 /* FLEX INDEX -------------------------------------------------------------------- */
@@ -24,53 +25,55 @@ body {
 	flex-flow: row wrap;
 }
 
-/* FORMULARIO--------------------------------------------------------------------- */
+/* FORMULARIO--------------------------------------------------------------------- 
 .flexForm {
 	height: 75vh;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	align-items: center;
+		h1 {
+			margin: 20px;
+			font-family: $fontBebas;
+			font-size: 30px;
+			color: $colorLetras;
+			text-align: center;
+		}
 }
 
 .formulario {
+	
 	font-family: $fontMontserrat;
+	padding: 10px;
+	margin: 10px;
 	display: flex;
+	object-fit: cover;
 	flex-flow: column wrap;
 	color: $colorLetras;
-	padding: 10px;
-	object-fit: cover;
+	background-color: $backgroundHover;
+	border-radius: 2px;
+	
+	
+}
 
-	label {
-		margin: 10px 0px 0px 0px;
-		padding-top: 10px;
-		padding-bottom: 2px;
-		font-size: 20px;
-	}
-
-	input {
-		margin-top: 0px;
-		padding: 10x;
-		font-size: 15px;
-	}
-
-	textarea {
-		margin: 20px 0px 0px 0px;
-		padding: 10x;
-	}
-
-	button {
-		margin: 10px;
-		padding: 10x;
-		font-size: 15px;
-	}
+.caja {
+	display: flex;
+	flex-direction: column;
+	margin: 7px;
+		input {
+			flex: 1;
+		}
+		label {
+			font-weight: bold;
+		}
 }
 
 .flexButton {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	margin: 7px;
 }
+*/
 
 /* BOTON DE INSTAGRAM------------------------------------------------------------- */
 .botonInsta {

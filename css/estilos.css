@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  margin-top: 10px;
 }
 
 .tituloUno {
@@ -20,7 +20,6 @@
   font-weight: normal;
   font-size: 60px;
   text-align: center;
-  margin-top: 10px;
 }
 
 .tituloDos {
@@ -122,6 +121,7 @@ body {
 .flexPrincipal {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
 }
 
 /* FLEX INDEX -------------------------------------------------------------------- */
@@ -131,50 +131,55 @@ body {
   flex-flow: row wrap;
 }
 
-/* FORMULARIO--------------------------------------------------------------------- */
+/* FORMULARIO--------------------------------------------------------------------- 
 .flexForm {
-  height: 75vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+	height: 75vh;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+		h1 {
+			margin: 20px;
+			font-family: $fontBebas;
+			font-size: 30px;
+			color: $colorLetras;
+			text-align: center;
+		}
 }
 
 .formulario {
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-flow: column wrap;
-  color: white;
-  padding: 10px;
-  object-fit: cover;
+
+	font-family: $fontMontserrat;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	object-fit: cover;
+	flex-flow: column wrap;
+	color: $colorLetras;
+	background-color: $backgroundHover;
+	border-radius: 2px;
+
+
 }
-.formulario label {
-  margin: 10px 0px 0px 0px;
-  padding-top: 10px;
-  padding-bottom: 2px;
-  font-size: 20px;
-}
-.formulario input {
-  margin-top: 0px;
-  padding: 10x;
-  font-size: 15px;
-}
-.formulario textarea {
-  margin: 20px 0px 0px 0px;
-  padding: 10x;
-}
-.formulario button {
-  margin: 10px;
-  padding: 10x;
-  font-size: 15px;
+
+.caja {
+	display: flex;
+	flex-direction: column;
+	margin: 7px;
+		input {
+			flex: 1;
+		}
+		label {
+			font-weight: bold;
+		}
 }
 
 .flexButton {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 7px;
 }
-
+*/
 /* BOTON DE INSTAGRAM------------------------------------------------------------- */
 .botonInsta {
   position: fixed;
@@ -289,6 +294,35 @@ img {
   padding: 0;
 }
 
+/* FORMULARIO ------------------------------------------------------------------------------ */
+.flexPrincipal h3 {
+  margin-top: 25px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.conteinerForm {
+  height: 65vh;
+}
+.conteinerForm label {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+.conteinerForm .btn {
+  margin: 5px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.conteinerForm .btn button {
+  padding: 5px;
+  background-color: #333333;
+  border: 1px solid white;
+}
+
 /* MEDIA QUERIES----------------------------------------------------------------------- */
 /* VERSION MOBILE */
 @media (max-width: 600px) {
@@ -303,28 +337,41 @@ img {
     justify-content: center;
     align-items: normal;
   }
+  .botonInstaIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* FLEX HEADER GENERAL */
   .flexHeader {
     align-items: normal;
   }
   /* VIDEO DE PORTADA */
   .video {
-    height: 45%;
     display: flex;
     flex: 100%;
+  }
+  .video video {
+    height: 39vh;
   }
   /* COLUMNA DE BOOK RECITALES */
   .columna {
     flex: 100%;
   }
+  /* NAVBAR HEADER */
   .navbar {
-    padding: 40px;
+    padding: 25px;
   }
   .navbar li a:hover {
     background-color: #333333;
     color: rgb(175, 175, 175);
     font-size: 20px;
   }
+  /* LINK INICIO NAVBAR */
+  .inicio {
+    display: none;
+  }
+  /* FOOTER */
   .navFooter {
     display: none;
     align-items: center;
@@ -335,9 +382,18 @@ img {
   .infoFooter {
     font-size: 8px;
   }
-  /* LINK INICIO NAVBAR */
-  .inicio {
+  /* ENCABEZADO DEL PAG CONTACTO */
+  .conteinerForm {
+    height: auto;
+  }
+  .conteinerForm label {
     display: none;
+  }
+  .conteinerForm h2 {
+    margin: 10px;
+  }
+  .flexPrincipal h3 {
+    margin: 0;
   }
 }
 /* VERSION TABLETA */
@@ -362,6 +418,10 @@ img {
   /* LOGO CAMARA NAVBAR */
   .navbar-brand img {
     display: none;
+  }
+  /* ENCABEZADO DEL PAG CONTACTO */
+  .conteinerForm h2 {
+    margin: 10px;
   }
 }
 /* VERSION DESKTOP */
