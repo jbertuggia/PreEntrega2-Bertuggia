@@ -1,7 +1,12 @@
-/* HEADER GENERAL------------------------------------------------------------------------- */
+/* FONTS------------------------------------------------------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap");
+@font-face {
+  font-family: "distant stroke";
+  src: url(../fonts/Distant_Stroke.otf);
+}
+/* HEADER GENERAL------------------------------------------------------------------------- */
 .flexHeader {
   display: flex;
   flex-direction: column;
@@ -15,6 +20,7 @@
   font-weight: normal;
   font-size: 60px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .tituloDos {
@@ -100,12 +106,7 @@
   color: rgb(175, 175, 175);
 }
 
-/* FONTS------------------------------------------------------------------------ */
-@font-face {
-  font-family: "distant stroke";
-  src: url(../fonts/Distant_Stroke.otf);
-}
-/* RESET DE MARGIN Y PADDING-------------------------------------------------------- */
+/* RESET DE MARGIN Y PADDING------------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -123,16 +124,16 @@ body {
   flex-flow: column wrap;
 }
 
-/* FLEX INDEX ----------------------------------------------------------------------------- */
+/* FLEX INDEX -------------------------------------------------------------------- */
 .flexIndex {
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
 }
 
-/* FORMULARIO----------------------------------------------------------------------------- */
+/* FORMULARIO--------------------------------------------------------------------- */
 .flexForm {
-  height: 75%;
+  height: 75vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -174,43 +175,49 @@ body {
   justify-content: space-between;
 }
 
-/* IMAGEN DEL INDEX----------------------------------------------------------------- */
-.imagen {
+/* BOTON DE INSTAGRAM------------------------------------------------------------- */
+.botonInsta {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+
+img {
+  width: 40px;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* BOTON DE INSTAGRAM INDEX------------------------------------------------------------- */
+.botonInstaIndex {
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+.botonInstaIndex img {
+  width: 40px;
+}
+.botonInstaIndex img:hover {
+  filter: invert(100%);
+}
+
+/* VIDEO DEL INDEX----------------------------------------------------------------- */
+.video {
   height: 95%;
   display: flex;
   flex: 50%;
 }
-.imagen img {
+.video img {
   width: 100%;
   object-fit: cover;
   animation-name: aparecer;
   animation-duration: 8s;
 }
 
-.imagen video {
+.video video {
   width: 100%;
   object-fit: cover;
   animation-name: aparecer;
   animation-duration: 8s;
-}
-
-/* GALERIA DE FOTOS RECITALES-------------------------------------------------------- */
-.galeria {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px;
-}
-
-.columna {
-  flex: 25%;
-}
-.columna img {
-  width: 100%;
-  padding: 3px;
-  object-fit: cover;
 }
 
 /* PARRAFO BIENVENIDA INDEX--------------------------------------------------------- */
@@ -221,7 +228,7 @@ body {
   font-size: 15px;
   line-height: 20px;
   text-align: center;
-  margin: 40px;
+  margin: 40px 40px 20px 40px;
 }
 
 /* PARRAFO ACERCA DE MI------------------------------------------------------------- */
@@ -248,23 +255,20 @@ body {
 }
 .navbar li a:hover {
   background-color: #2b2b2b;
-  font-size: 20px;
+  font-size: 15px;
+  border-radius: 5px;
 }
 .navbar li a:visited {
   color: white;
 }
 
-.navbar-brand {
-  padding: 0;
-}
-.navbar-brand svg {
-  width: 25px;
-  height: 25px;
-  color: white;
-  margin-bottom: 3px;
+.navbar-brand img {
+  width: 93px;
+  border: 1px white solid;
+  border-radius: 6px;
 }
 
-/* GALERIA DE FOTOS BOOKS------------------------------------------------------------- */
+/* GALERIA DE FOTOS BOOKS Y RECITALES------------------------------------------------------- */
 .row {
   margin: 3px;
 }
@@ -288,21 +292,28 @@ body {
 /* MEDIA QUERIES----------------------------------------------------------------------- */
 /* VERSION MOBILE */
 @media (max-width: 600px) {
+  /* FLEX INDEX */
   .flexIndex {
     height: auto;
   }
+  /* HEADER INDEX */
   .headerIndex {
-    height: 45%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: normal;
   }
-  .imagen {
+  /* FLEX HEADER GENERAL */
+  .flexHeader {
+    align-items: normal;
+  }
+  /* VIDEO DE PORTADA */
+  .video {
     height: 45%;
     display: flex;
     flex: 100%;
   }
+  /* COLUMNA DE BOOK RECITALES */
   .columna {
     flex: 100%;
   }
@@ -314,28 +325,50 @@ body {
     color: rgb(175, 175, 175);
     font-size: 20px;
   }
+  .navFooter {
+    display: none;
+    align-items: center;
+  }
   .navFooter li a {
     font-size: 10px;
   }
   .infoFooter {
     font-size: 8px;
   }
+  /* LINK INICIO NAVBAR */
+  .inicio {
+    display: none;
+  }
 }
 /* VERSION TABLETA */
 @media (min-width: 601px) and (max-width: 900px) {
+  /* HEADER INDEX */
   .headerIndex {
     height: 45%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
   }
-  .imagen {
+  /* VIDEO DE PORTADA */
+  .video {
     height: 45%;
     display: flex;
     flex: 100%;
   }
+  /* COLUMNA DE BOOK RECITALES */
   .columna {
     flex: 50%;
+  }
+  /* LOGO CAMARA NAVBAR */
+  .navbar-brand img {
+    display: none;
+  }
+}
+/* VERSION DESKTOP */
+@media (min-width: 901px) {
+  /* LOGO CAMARA NAVBAR */
+  .navbar-brand img {
+    display: none;
   }
 }
 

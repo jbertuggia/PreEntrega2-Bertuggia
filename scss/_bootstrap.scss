@@ -9,7 +9,8 @@
 			transition: all 0.5s;
 			&:hover {
 				background-color: $backgroundHover2;
-				font-size: 20px;
+				font-size: 15px;
+				border-radius: 5px;
 			}
 			&:visited {
 				color: $colorLetras;
@@ -17,17 +18,17 @@
 		}
 	}
 }
+
 .navbar-brand {
-	svg {
-		width: 25px;
-		height: 25px;
-		color: $colorLetras;
-		margin-bottom: 3px;
+	img {
+		width: 93px;
+		border: 1px white solid;
+		border-radius: 6px;
 	}
-	padding: 0;
+	
 }
 
-/* GALERIA DE FOTOS BOOKS------------------------------------------------------------- */
+/* GALERIA DE FOTOS BOOKS Y RECITALES------------------------------------------------------- */
 .row {
 	margin: 3px;
 	img {

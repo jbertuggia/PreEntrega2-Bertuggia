@@ -1,37 +1,38 @@
-/* RESET DE MARGIN Y PADDING-------------------------------------------------------- */
+/* RESET DE MARGIN Y PADDING------------------------------------------------------ */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-  /* BODY--------------------------------------------------------------------------- */
-  body {
-    background-color: $colorFondo;
-  }
+/* BODY--------------------------------------------------------------------------- */
+body {
+	background-color: $colorFondo;
+}
 
 
-  /* FLEX PRINCIPAL----------------------------------------------------------------- */
+/* FLEX PRINCIPAL----------------------------------------------------------------- */
 .flexPrincipal {
-  display: flex;
-  flex-flow: column wrap;
+	display: flex;
+	flex-flow: column wrap;
 }
 
-/* FLEX INDEX ----------------------------------------------------------------------------- */
+/* FLEX INDEX -------------------------------------------------------------------- */
 .flexIndex {
-  height: 100vh;
-  display: flex;
-  flex-flow: row wrap;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
 }
 
-/* FORMULARIO----------------------------------------------------------------------------- */
+/* FORMULARIO--------------------------------------------------------------------- */
 .flexForm {
-	height: 75%;
+	height: 75vh;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
+
 .formulario {
 	font-family: $fontMontserrat;
 	display: flex;
@@ -39,29 +40,61 @@
 	color: $colorLetras;
 	padding: 10px;
 	object-fit: cover;
+
 	label {
 		margin: 10px 0px 0px 0px;
 		padding-top: 10px;
 		padding-bottom: 2px;
 		font-size: 20px;
 	}
+
 	input {
 		margin-top: 0px;
 		padding: 10x;
 		font-size: 15px;
 	}
+
 	textarea {
 		margin: 20px 0px 0px 0px;
 		padding: 10x;
 	}
+
 	button {
 		margin: 10px;
 		padding: 10x;
 		font-size: 15px;
 	}
 }
+
 .flexButton {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
+
+/* BOTON DE INSTAGRAM------------------------------------------------------------- */
+.botonInsta {
+	position: fixed;
+	bottom: 15px;
+	right: 20px;
+}
+
+img {
+	width: 40px;
+	bottom: 10px;
+	right: 10px;
+}
+
+/* BOTON DE INSTAGRAM INDEX------------------------------------------------------------- */
+.botonInstaIndex {
+	margin: 0 0 10px 0;
+	padding: 10px;
+		img {
+		width: 40px;
+		&:hover {
+			filter: invert(100%);
+		}
+	}
+
+}
+

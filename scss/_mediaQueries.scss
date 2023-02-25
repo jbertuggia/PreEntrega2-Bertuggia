@@ -2,21 +2,29 @@
 
 /* VERSION MOBILE */
 @media (max-width: 600px) {
+
+	/* FLEX INDEX */
 	.flexIndex {
 		height: auto;
 	}
+	/* HEADER INDEX */
 	.headerIndex {
-		height: 45%;
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
 		align-items: normal;
 	}
-	.imagen {
+	/* FLEX HEADER GENERAL */
+	.flexHeader {
+		align-items: normal;
+	}
+	/* VIDEO DE PORTADA */
+	.video {
 		height: 45%;
 		display: flex;
 		flex: 100%;
 	}
+	/* COLUMNA DE BOOK RECITALES */
 	.columna {
 		flex: 100%;
 	}
@@ -33,6 +41,8 @@
 		}
 	}
 	.navFooter {
+		display: none;
+		align-items: center;
 		li {
 			a {
 				font-size: 10px;
@@ -42,22 +52,59 @@
 	.infoFooter {
 		font-size: 8px;
 	}
+
+	/* LINK INICIO NAVBAR */
+.inicio {
+	display: none;
 }
+}
+
+
+
+//--------------------------------------------------------------------------------------------------------------------
+
 
 /* VERSION TABLETA */
 @media (min-width: 601px) and (max-width: 900px) {
+	/* HEADER INDEX */
 	.headerIndex {
 		height: 45%;
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
 	}
-	.imagen {
+	/* VIDEO DE PORTADA */
+	.video {
 		height: 45%;
 		display: flex;
 		flex: 100%;
 	}
+	/* COLUMNA DE BOOK RECITALES */
 	.columna {
 		flex: 50%;
 	}
+	/* LOGO CAMARA NAVBAR */
+	.navbar-brand {
+		img {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------
+
+/* VERSION DESKTOP */
+@media (min-width:901px) {
+/* LOGO CAMARA NAVBAR */
+.navbar-brand {
+	img {
+		display: none;
+	}
+}
+
 }
