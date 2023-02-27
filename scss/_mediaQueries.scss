@@ -2,6 +2,20 @@
 
 /* VERSION MOBILE */
 @media (max-width: 600px) {
+	/* FELX HEADER PRINCIPAL */
+	.flexPrincipal {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: normal;
+			h3 {
+				margin: 0 0 10px 0;
+			}
+	}
+
+	/* FLEX HEADER GENERAL */
+	.flexHeader {
+		align-items: normal;
+	}
 
 	/* FLEX INDEX */
 	.flexIndex {
@@ -15,36 +29,11 @@
 		justify-content: center;
 		align-items: normal;
 	}
-
-	.botonInstaIndex {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	/* FLEX HEADER GENERAL */
-	.flexHeader {
-		align-items: normal;
-	}
-
-	/* VIDEO DE PORTADA */
-	.video {
-		display: flex;
-		flex: 100%;
-
-		video {
-			height: 39vh;
-		}
-	}
-
-	/* COLUMNA DE BOOK RECITALES */
-	.columna {
-		flex: 100%;
-	}
-
+	
 	/* NAVBAR HEADER */
 	.navbar {
-		padding: 25px;
+		display: flex;
+		margin: 20px;
 
 		li {
 			a {
@@ -56,10 +45,32 @@
 			}
 		}
 	}
+		/* LINK INICIO NAVBAR */
+		.inicio {
+			display: none;
+		}
 
-	/* LINK INICIO NAVBAR */
-	.inicio {
-		display: none;
+	/* BOTON INSTAGRAM INDEX */
+	.botonInstaIndex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* VIDEO DE PORTADA */
+	.video {
+		display: flex;
+		flex: 100%;
+		margin: 30px 0 15px 0;
+
+		video {
+			height: 39vh;
+		}
+	}
+
+	/* COLUMNA DE BOOK RECITALES */
+	.columna {
+		flex: 100%;
 	}
 
 	/* FOOTER */
@@ -89,11 +100,6 @@
 			}
 	}
 
-	.flexPrincipal {
-		h3 {
-			margin: 0;
-		}
-	}
 }
 
 //--------------------------------------------------------------------------------------------------------------------
