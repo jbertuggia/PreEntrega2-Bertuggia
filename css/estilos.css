@@ -314,10 +314,11 @@ img {
   margin: 5px;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .conteinerForm .btn button {
   padding: 5px;
+  width: 95px;
   background-color: #333333;
   border: 1px solid white;
 }

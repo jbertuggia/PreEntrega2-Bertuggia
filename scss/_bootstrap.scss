@@ -66,9 +66,10 @@
 	margin: 5px;
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 		button {
 			padding: 5px;
+			width: 95px;
 			background-color: $backgroundHover;
 			border: 1px solid $colorLetras;
 		}
