@@ -1,25 +1,16 @@
-
 /* HEADER GENERAL------------------------------------------------------------------------- */
 .flexHeader {
 	display: flex;
 	flex-direction: column;
 	margin-top: 10px;
-}
-.tituloUno {
-	font-family: $fontBebas;
-	color: $colorLetras;
-	font-weight: normal;
-	font-size: 60px;
-	text-align: center;
-}
-.tituloDos {
-	font-family: $fontDistant;
-	color: $colorLetras;
-	font-weight: normal;
-	font-size: 50px;
-	line-height: 30px;
-	text-align: center;
-	padding-bottom: 10px;
+
+	h1 {
+		@include tituloUno;
+	}
+
+	h2 {
+		@include tituloDos;
+	}
 }
 
 /* HEADER INDEX------------------------------------------------------------------------- */
@@ -28,10 +19,12 @@
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 100%;
 	}
 }
+
 .headerIndex {
 	height: 95%;
 	display: flex;
@@ -39,17 +32,25 @@
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
+
 	h1 {
+		@include tituloUno;
 		animation-name: aparecer;
 		animation-duration: 5s;
 		animation-iteration-count: initial;
 	}
+
 	h2 {
+		@include tituloDos;
 		animation-name: aparecer;
 		animation-duration: 4s;
 		animation-iteration-count: initial;
 	}
+
 	p {
+		@include parrafos;
+		text-align: center;
+		margin: 40px 40px 20px 40px;
 		animation-name: aparecer;
 		animation-duration: 5s;
 		animation-iteration-count: initial;

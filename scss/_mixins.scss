@@ -1,0 +1,26 @@
+/* MIXINS --------------------------------------------------------------------------------*/
+@mixin tituloUno {
+	font-family: $fontBebas;
+	color: $colorLetras;
+	font-weight: normal;
+	font-size: 60px;
+	text-align: center;
+}
+
+@mixin tituloDos {
+	font-family: $fontDistant;
+	color: $colorLetras;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 30px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+@mixin parrafos {
+	font-family: $fontMontserrat;
+	color: $colorLetras;
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 20px;
+}

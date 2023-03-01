@@ -6,22 +6,20 @@
   font-family: "distant stroke";
   src: url(../fonts/Distant_Stroke.otf);
 }
-/* HEADER GENERAL------------------------------------------------------------------------- */
+/* MIXINS --------------------------------------------------------------------------------*/ /* HEADER GENERAL------------------------------------------------------------------------- */
 .flexHeader {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-
-.tituloUno {
+.flexHeader h1 {
   font-family: "Bebas Neue", cursive;
   color: white;
   font-weight: normal;
   font-size: 60px;
   text-align: center;
 }
-
-.tituloDos {
+.flexHeader h2 {
   font-family: "distant stroke";
   color: white;
   font-weight: normal;
@@ -49,16 +47,35 @@
   align-items: center;
 }
 .headerIndex h1 {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
   animation-name: aparecer;
   animation-duration: 5s;
   animation-iteration-count: initial;
 }
 .headerIndex h2 {
+  font-family: "distant stroke";
+  color: white;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 10px;
   animation-name: aparecer;
   animation-duration: 4s;
   animation-iteration-count: initial;
 }
 .headerIndex p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin: 40px 40px 20px 40px;
   animation-name: aparecer;
   animation-duration: 5s;
   animation-iteration-count: initial;
@@ -130,63 +147,38 @@ body {
   flex-flow: row wrap;
 }
 
-/* FORMULARIO--------------------------------------------------------------------- 
-.flexForm {
-	height: 75vh;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-		h1 {
-			margin: 20px;
-			font-family: $fontBebas;
-			font-size: 30px;
-			color: $colorLetras;
-			text-align: center;
-		}
+/* FLEX PAGINA ACERCA DE MI */
+.flexAcercaDe {
+  height: 70vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flexAcercaDe p {
+  display: flex;
+  flex: 40%;
+  width: 50vh;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 20px;
+}
+.flexAcercaDe img {
+  display: flex;
+  flex: 25%;
+  height: 70vh;
+  object-fit: cover;
 }
 
-.formulario {
-
-	font-family: $fontMontserrat;
-	padding: 10px;
-	margin: 10px;
-	display: flex;
-	object-fit: cover;
-	flex-flow: column wrap;
-	color: $colorLetras;
-	background-color: $backgroundHover;
-	border-radius: 2px;
-
-
-}
-
-.caja {
-	display: flex;
-	flex-direction: column;
-	margin: 7px;
-		input {
-			flex: 1;
-		}
-		label {
-			font-weight: bold;
-		}
-}
-
-.flexButton {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	margin: 7px;
-}
-*/
 /* BOTON DE INSTAGRAM------------------------------------------------------------- */
 .botonInsta {
   position: fixed;
   bottom: 15px;
   right: 20px;
 }
-
-img {
+.botonInsta img {
   width: 40px;
   bottom: 10px;
   right: 10px;
@@ -222,30 +214,6 @@ img {
   object-fit: cover;
   animation-name: aparecer;
   animation-duration: 8s;
-}
-
-/* PARRAFO BIENVENIDA INDEX--------------------------------------------------------- */
-.bienvenidos {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: lighter;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  margin: 40px 40px 20px 40px;
-}
-
-/* PARRAFO ACERCA DE MI------------------------------------------------------------- */
-.acercaDeMi {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 50%;
-  text-align: center;
-  justify-content: space-around;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  color: white;
 }
 
 /* NAVBAR BOOTSTRAP--------------------------------------------------------------------- */
@@ -402,6 +370,26 @@ img {
   }
   .conteinerForm h2 {
     margin: 10px;
+  }
+  /* IMAGEN DE ACERCA DE MI */
+  .flexAcercaDe {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .flexAcercaDe p {
+    display: flex;
+    height: 50vh;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .flexAcercaDe img {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
   }
 }
 /* VERSION TABLETA */

@@ -100,6 +100,23 @@
 			}
 	}
 
+	/* IMAGEN DE ACERCA DE MI */
+	.flexAcercaDe {
+		flex-direction: column;
+		flex-wrap: wrap;
+		p {
+			display: flex;
+			height: 50vh;
+			@include parrafos;
+		}
+		img {
+			display: flex;
+			height: 40vh;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
 }
 
 //--------------------------------------------------------------------------------------------------------------------

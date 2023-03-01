@@ -25,79 +25,52 @@ body {
 	flex-flow: row wrap;
 }
 
-/* FORMULARIO--------------------------------------------------------------------- 
-.flexForm {
-	height: 75vh;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-		h1 {
-			margin: 20px;
-			font-family: $fontBebas;
-			font-size: 30px;
-			color: $colorLetras;
-			text-align: center;
-		}
-}
-
-.formulario {
-	
-	font-family: $fontMontserrat;
-	padding: 10px;
-	margin: 10px;
-	display: flex;
-	object-fit: cover;
-	flex-flow: column wrap;
-	color: $colorLetras;
-	background-color: $backgroundHover;
-	border-radius: 2px;
-	
-	
-}
-
-.caja {
-	display: flex;
-	flex-direction: column;
-	margin: 7px;
-		input {
-			flex: 1;
-		}
-		label {
-			font-weight: bold;
-		}
-}
-
-.flexButton {
+/* FLEX PAGINA ACERCA DE MI */
+.flexAcercaDe {
+	height: 70vh;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
-	margin: 7px;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		display: flex;
+		flex: 40%;
+		width: 50vh;
+		@include parrafos;
+	}
+
+	img {
+		display: flex;
+		flex: 25%;
+		height: 70vh;
+		object-fit: cover;
+	}
 }
-*/
 
 /* BOTON DE INSTAGRAM------------------------------------------------------------- */
 .botonInsta {
 	position: fixed;
 	bottom: 15px;
 	right: 20px;
-}
 
-img {
-	width: 40px;
-	bottom: 10px;
-	right: 10px;
+	img {
+		width: 40px;
+		bottom: 10px;
+		right: 10px;
+	}
 }
 
 /* BOTON DE INSTAGRAM INDEX------------------------------------------------------------- */
 .botonInstaIndex {
 	margin: 0 0 10px 0;
 	padding: 10px;
-		img {
+
+	img {
 		width: 40px;
+
 		&:hover {
 			filter: invert(100%);
 		}
 	}
-
 }
-
