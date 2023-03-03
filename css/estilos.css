@@ -147,29 +147,46 @@ body {
   flex-flow: row wrap;
 }
 
-/* FLEX PAGINA ACERCA DE MI */
+/* FLEX PAGINA ACERCA DE MI -------------------------------------------------------*/
 .flexAcercaDe {
-  height: 70vh;
   display: flex;
-  flex-flow: row wrap;
+  flex: 75vh;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-.flexAcercaDe p {
+
+.imagenYoUno {
+  margin: 0 20px 0 0;
   display: flex;
-  flex: 40%;
-  width: 50vh;
+  height: 75vh;
+  flex: 50%;
+  justify-content: right;
+  align-items: center;
+}
+.imagenYoUno img {
+  height: 35vh;
+  width: 80%;
+  object-fit: cover;
+}
+
+.imagenYoDos {
+  display: none;
+}
+
+.parrafoYo {
+  display: flex;
+  flex: 50%;
+  justify-content: left;
+  align-items: center;
+}
+.parrafoYo p {
+  width: 60%;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: lighter;
   font-size: 15px;
   line-height: 20px;
-}
-.flexAcercaDe img {
-  display: flex;
-  flex: 25%;
-  height: 70vh;
-  object-fit: cover;
 }
 
 /* BOTON DE INSTAGRAM------------------------------------------------------------- */
@@ -202,13 +219,6 @@ body {
   display: flex;
   flex: 50%;
 }
-.video img {
-  width: 100%;
-  object-fit: cover;
-  animation-name: aparecer;
-  animation-duration: 8s;
-}
-
 .video video {
   width: 100%;
   object-fit: cover;
@@ -279,14 +289,14 @@ body {
   font-weight: bold;
 }
 .conteinerForm .btn {
-  margin: 5px;
+  margin: 5px 0 5px 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
 }
 .conteinerForm .btn button {
   padding: 5px;
-  width: 95px;
+  width: 100%;
   border: 1px solid white;
 }
 
@@ -373,23 +383,40 @@ body {
   }
   /* IMAGEN DE ACERCA DE MI */
   .flexAcercaDe {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .flexAcercaDe p {
     display: flex;
-    height: 50vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenYoDos {
+    display: flex;
+    height: auto;
+    flex: 30%;
+    justify-content: center;
+  }
+  .imagenYoDos img {
+    height: 25vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+  .imagenYoUno {
+    display: none;
+  }
+  .parrafoYo {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .parrafoYo p {
+    padding: 15px;
+    margin: 10px;
+    width: 90%;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: lighter;
     font-size: 15px;
     line-height: 20px;
-  }
-  .flexAcercaDe img {
-    display: flex;
-    height: 40vh;
-    width: 100%;
-    object-fit: cover;
   }
 }
 /* VERSION TABLETA */
@@ -418,6 +445,43 @@ body {
   /* ENCABEZADO DEL PAG CONTACTO */
   .conteinerForm h2 {
     margin: 10px;
+  }
+  /* IMAGEN DE ACERCA DE MI */
+  .flexAcercaDe {
+    display: flex;
+    flex: 75vh;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenYoUno {
+    display: flex;
+    height: 75vh;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenYoUno img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .imagenYoDos {
+    display: none;
+  }
+  .parrafoYo {
+    display: flex;
+    flex: 50%;
+    justify-content: left;
+    align-items: center;
+  }
+  .parrafoYo p {
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 /* VERSION DESKTOP */

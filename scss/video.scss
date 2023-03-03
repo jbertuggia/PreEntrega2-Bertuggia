@@ -4,20 +4,12 @@
 	height: 95%;
 	display: flex;
 	flex: 50%;
-	img {
-		width: 100%;
-		object-fit: cover;
-		animation-name: aparecer;
-		animation-duration: 8s;
-	}
-}
-
-.video {
-    video {
+	video {
         width: 100%;
         object-fit: cover;
         animation-name: aparecer;
         animation-duration: 8s;
     }
 }
+
 

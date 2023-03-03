@@ -63,13 +63,13 @@
 			font-weight: bold;	
 		}
 .btn {
-	margin: 5px;
+	margin: 5px 0 5px 0;
 	padding: 0;
 	display: flex;
 	justify-content: space-around;
 		button {
 			padding: 5px;
-			width: 95px;
+			width: 100%;
 			
 			border: 1px solid $colorLetras;
 		}
