@@ -2,14 +2,16 @@
 
 /* VERSION MOBILE */
 @media (max-width: 601px) {
+
 	/* FELX HEADER PRINCIPAL */
 	.flexPrincipal {
 		display: flex;
 		flex-flow: column wrap;
 		align-items: normal;
-			h3 {
-				margin: 0 0 10px 0;
-			}
+
+		h3 {
+			margin: 0 0 10px 0;
+		}
 	}
 
 	/* FLEX HEADER GENERAL */
@@ -29,7 +31,7 @@
 		justify-content: center;
 		align-items: normal;
 	}
-	
+
 	/* NAVBAR HEADER */
 	.navbar {
 		display: flex;
@@ -45,10 +47,11 @@
 			}
 		}
 	}
-		/* LINK INICIO NAVBAR */
-		.inicio {
-			display: none;
-		}
+
+	/* LINK INICIO NAVBAR */
+	.inicio {
+		display: none;
+	}
 
 	/* BOTON INSTAGRAM INDEX */
 	.botonInstaIndex {
@@ -68,20 +71,16 @@
 		}
 	}
 
-	/* COLUMNA DE BOOK RECITALES */
-	.columna {
-		flex: 100%;
-	}
-
 	/* FOOTER */
 	.navFooter {
 		display: none;
 		align-items: center;
-			li {
-				a {
-					font-size: 10px;
-				}
+
+		li {
+			a {
+				font-size: 10px;
 			}
+		}
 	}
 
 	.infoFooter {
@@ -92,12 +91,14 @@
 	/* ENCABEZADO DEL PAG CONTACTO */
 	.conteinerForm {
 		height: auto;
-			label {
-				display: none;
-			}
-			h2 {
-				margin: 10px;
-			}
+
+		label {
+			display: none;
+		}
+
+		h2 {
+			margin: 10px;
+		}
 	}
 
 	/* IMAGEN DE ACERCA DE MI */
@@ -107,12 +108,13 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 	.imagenYoDos {
 		display: flex;
 		height: auto;
 		flex: 30%;
 		justify-content: center;
-	
+
 		img {
 			height: 25vh;
 			width: 100vw;
@@ -123,18 +125,19 @@
 	.imagenYoUno {
 		display: none;
 	}
-	
+
 	.parrafoYo {
 		display: flex;
 		flex: 50%;
 		justify-content: center;
 		align-items: center;
-			p {
-				padding: 15px;
-				margin: 10px;
-				width: 90%;
-				@include parrafos;
-			}
+
+		p {
+			padding: 15px;
+			margin: 10px;
+			width: 90%;
+			@include parrafos;
+		}
 	}
 
 }
@@ -160,11 +163,6 @@
 		flex: 100%;
 	}
 
-	/* COLUMNA DE BOOK RECITALES */
-	.columna {
-		flex: 50%;
-	}
-
 	/* LOGO CAMARA NAVBAR */
 	.navbar-brand {
 		img {
@@ -178,6 +176,7 @@
 			margin: 10px;
 		}
 	}
+
 	/* IMAGEN DE ACERCA DE MI */
 	.flexAcercaDe {
 		display: flex;
@@ -186,13 +185,14 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 	.imagenYoUno {
 		display: flex;
 		height: 75vh;
 		flex: 50%;
 		justify-content: center;
 		align-items: center;
-	
+
 		img {
 			height: 60vh;
 			width: 100%;
@@ -209,12 +209,14 @@
 		flex: 50%;
 		justify-content: left;
 		align-items: center;
-			p {
-				width: 80%;
-				@include parrafos;
-			}
+
+		p {
+			width: 80%;
+			@include parrafos;
+		}
 	}
 }
+
 //---------------------------------------------------------------------------------------------------------------------
 
 /* VERSION DESKTOP */
