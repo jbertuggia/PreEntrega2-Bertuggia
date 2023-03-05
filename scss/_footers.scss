@@ -7,21 +7,26 @@
 	align-items: center;
 	padding: 5px;
 }
+
 .navFooter {
 	font-family: $fontMontserrat;
+
 	ul {
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
 	}
+
 	li {
 		display: inline;
 		padding-right: 10px;
 		padding-left: 10px;
+
 		a {
 			color: $colorLetraFooter;
 			text-decoration: none;
 			font-size: 14px;
+
 			&:hover {
 				background-color: $backgroundHover;
 				color: $colorLetraHover;
@@ -29,6 +34,7 @@
 		}
 	}
 }
+
 .infoFooter {
 	margin: 0;
 	font-family: $fontMontserrat;

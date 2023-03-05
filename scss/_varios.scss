@@ -33,6 +33,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 .imagenYoUno {
 	margin: 0 20px 0 0;
 	display: flex;
@@ -57,15 +58,16 @@ body {
 	flex: 50%;
 	justify-content: left;
 	align-items: center;
-		p {
-			width: 60%;
-			@include parrafos;
-		}
+
+	p {
+		width: 60%;
+		@include parrafos;
+	}
 }
 
 
 
-/* BOTON DE INSTAGRAM------------------------------------------------------------- */
+/* BOTON DE INSTAGRAM--------------------------------------------------------------- */
 .botonInsta {
 	position: fixed;
 	bottom: 15px;
@@ -78,7 +80,7 @@ body {
 	}
 }
 
-/* BOTON DE INSTAGRAM INDEX------------------------------------------------------------- */
+/* BOTON DE INSTAGRAM INDEX---------------------------------------------------------- */
 .botonInstaIndex {
 	margin: 0 0 10px 0;
 	padding: 10px;

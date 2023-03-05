@@ -1,15 +1,14 @@
 /* VIDEO DEL INDEX----------------------------------------------------------------- */
 
 .video {
-	height: 95%;
-	display: flex;
-	flex: 50%;
-	video {
+    height: 95%;
+    display: flex;
+    flex: 50%;
+
+    video {
         width: 100%;
         object-fit: cover;
         animation-name: aparecer;
         animation-duration: 8s;
     }
 }
-
-
