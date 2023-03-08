@@ -265,9 +265,10 @@ body {
   filter: grayscale(1);
 }
 .row img:hover {
-  padding: 0;
+  /* padding: 0; */
   filter: none;
-  box-shadow: 0px 0px 6px 6px #000 inset, 0px 0px 10px 1px #000000 inset;
+  /* box-shadow: 0px 0px 6px 6px #000 inset, 0px 0px 10px 1px #000000 inset; */
+  box-shadow: 0px 0px 28px 7px #FFFFFF;
   transform: scale(1);
   transition: 0.3s;
 }
@@ -431,6 +432,18 @@ body {
     line-height: 20px;
   }
 }
+/* BOTON DE INSTAGRAM--------------------------------------------------------------- */
+.botonInsta {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+.botonInsta img {
+  width: 40px;
+  bottom: 10px;
+  right: 10px;
+}
+
 /* VERSION TABLETA */
 @media (min-width: 602px) and (max-width: 900px) {
   /* HEADER INDEX */
