@@ -23,13 +23,16 @@
 		padding-left: 10px;
 
 		a {
+			padding: 5px;
 			color: $colorLetraFooter;
 			text-decoration: none;
 			font-size: 14px;
 
 			&:hover {
+				transition: 0.1s;
 				background-color: $backgroundHover;
 				color: $colorLetraHover;
+				border-radius: 4px;
 			}
 		}
 	}

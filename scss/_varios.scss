@@ -28,7 +28,7 @@ body {
 /* FLEX PAGINA ACERCA DE MI -------------------------------------------------------*/
 .flexAcercaDe {
 	display: flex;
-	flex: 75vh;
+	flex: 77vh;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
@@ -89,7 +89,9 @@ body {
 		width: 40px;
 
 		&:hover {
+			transition: 0.2s;
 			filter: invert(100%);
+
 		}
 	}
 }

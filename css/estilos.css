@@ -105,13 +105,16 @@
   padding-left: 10px;
 }
 .navFooter li a {
+  padding: 5px;
   color: rgb(175, 175, 175);
   text-decoration: none;
   font-size: 14px;
 }
 .navFooter li a:hover {
+  transition: 0.1s;
   background-color: #333333;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 .infoFooter {
@@ -150,7 +153,7 @@ body {
 /* FLEX PAGINA ACERCA DE MI -------------------------------------------------------*/
 .flexAcercaDe {
   display: flex;
-  flex: 75vh;
+  flex: 77vh;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
@@ -189,7 +192,7 @@ body {
   line-height: 20px;
 }
 
-/* BOTON DE INSTAGRAM------------------------------------------------------------- */
+/* BOTON DE INSTAGRAM--------------------------------------------------------------- */
 .botonInsta {
   position: fixed;
   bottom: 15px;
@@ -201,7 +204,7 @@ body {
   right: 10px;
 }
 
-/* BOTON DE INSTAGRAM INDEX------------------------------------------------------------- */
+/* BOTON DE INSTAGRAM INDEX---------------------------------------------------------- */
 .botonInstaIndex {
   margin: 0 0 10px 0;
   padding: 10px;
@@ -210,6 +213,7 @@ body {
   width: 40px;
 }
 .botonInstaIndex img:hover {
+  transition: 0.2s;
   filter: invert(100%);
 }
 
@@ -250,14 +254,14 @@ body {
   border-radius: 6px;
 }
 
-/* GALERIA DE FOTOS BOOKS Y RECITALES------------------------------------------------------- */
+/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES------------------------------------------- */
 .row {
   margin: 3px;
 }
 .row img {
   width: 100%;
-  padding: 3px;
-  transition: 0.5s;
+  padding: 5px;
+  transition: 0.3s;
   filter: grayscale(1);
 }
 .row img:hover {
@@ -265,7 +269,7 @@ body {
   filter: none;
   box-shadow: 0px 0px 6px 6px #000 inset, 0px 0px 10px 1px #000000 inset;
   transform: scale(1);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .col-xl-3 {
@@ -282,7 +286,7 @@ body {
 
 /* FORMULARIO ------------------------------------------------------------------------------ */
 .flexPrincipal h3 {
-  margin-top: 25px;
+  margin-top: 50px;
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
   color: white;
@@ -290,7 +294,10 @@ body {
 }
 
 .conteinerForm {
-  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 67.5vh;
 }
 .conteinerForm label {
   font-family: "Montserrat", sans-serif;
@@ -365,10 +372,6 @@ body {
   .video video {
     height: 250px;
   }
-  /* COLUMNA DE BOOK RECITALES */
-  .columna {
-    flex: 100%;
-  }
   /* FOOTER */
   .navFooter {
     display: none;
@@ -442,10 +445,6 @@ body {
     height: 45%;
     display: flex;
     flex: 100%;
-  }
-  /* COLUMNA DE BOOK RECITALES */
-  .columna {
-    flex: 50%;
   }
   /* LOGO CAMARA NAVBAR */
   .navbar-brand img {
