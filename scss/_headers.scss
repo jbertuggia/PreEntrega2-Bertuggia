@@ -6,6 +6,10 @@
 
 	h1 {
 		@include tituloUno;
+			a {
+				text-decoration: none;
+				color: $colorLetras
+			}
 	}
 
 	h2 {
@@ -35,9 +39,14 @@
 
 	h1 {
 		@include tituloUno;
+		text-decoration: none;
 		animation-name: aparecer;
 		animation-duration: 5s;
 		animation-iteration-count: initial;
+		a {
+			text-decoration: none;
+			color: $colorLetras
+		}
 	}
 
 	h2 {
