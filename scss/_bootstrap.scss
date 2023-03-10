@@ -1,4 +1,4 @@
-/* NAVBAR BOOTSTRAP--------------------------------------------------------------------- */
+/* NAVBAR BOOTSTRAP------------------------------------------------------------------- */
 
 .navbar {
 	background-color: $colorFondo;
@@ -30,7 +30,7 @@
 	}
 }
 
-/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES------------------------------------------- */
+/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES----------------------------------------- */
 .row {
 	margin: 3px;
 
@@ -41,9 +41,7 @@
 		filter: grayscale(1);
 
 		&:hover {
-			/* padding: 0; */
 			filter: none;
-			/* box-shadow: 0px 0px 6px 6px #000 inset, 0px 0px 10px 1px #000000 inset; */
 			box-shadow: 0px 0px 28px 7px #FFFFFF;
 			transition: 0.3s;
 		}

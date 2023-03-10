@@ -1,9 +1,9 @@
-/* MEDIA QUERIES----------------------------------------------------------------------- */
+//MEDIA QUERIES------------------------------------------------------------------------- 
 
 /* VERSION MOBILE */
 @media (max-width: 601px) {
 
-	/* FELX HEADER PRINCIPAL */
+	/* CONTENEDOR FLEX PRINCIPAL PAG INDEX */
 	.flexPrincipal {
 		display: flex;
 		flex-flow: column wrap;
@@ -12,11 +12,6 @@
 		h3 {
 			margin: 0 0 10px 0;
 		}
-	}
-
-	/* FLEX HEADER GENERAL */
-	.flexHeader {
-		align-items: normal;
 	}
 
 	/* FLEX INDEX */
@@ -31,6 +26,13 @@
 		justify-content: center;
 		align-items: normal;
 	}
+
+
+	/* CONTENEDOR FLEX PRINCIPAL RESTO DE PAGS */
+	.flexHeader {
+		align-items: normal;
+	}
+
 
 	/* NAVBAR HEADER */
 	.navbar {
@@ -48,10 +50,12 @@
 		}
 	}
 
+
 	/* LINK INICIO NAVBAR */
 	.inicio {
 		display: none;
 	}
+
 
 	/* BOTON INSTAGRAM INDEX */
 	.botonInstaIndex {
@@ -59,6 +63,7 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 
 	/* VIDEO DE PORTADA */
 	.video {
@@ -70,6 +75,7 @@
 			height: 250px;
 		}
 	}
+
 
 	/* FOOTER */
 	.navFooter {
@@ -100,6 +106,7 @@
 			margin: 10px;
 		}
 	}
+
 
 	/* IMAGEN DE ACERCA DE MI */
 	.flexAcercaDe {
@@ -140,22 +147,44 @@
 		}
 	}
 
-}
-
-/* BOTON DE INSTAGRAM--------------------------------------------------------------- */
-.botonInsta {
-	position: fixed;
-	bottom: 5px;
-	right: 5px;
-
-	img {
-		width: 40px;
-		bottom: 10px;
-		right: 10px;
+	
+	/* BOTON DE INSTAGRAM */
+	.botonInsta {
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+	
+		img {
+			width: 40px;
+			bottom: 10px;
+			right: 10px;
+		}
 	}
+
+
+	/* DESHABILITAR HOVER IMAGENES GALERIAS */
+	.row {
+		margin: 3px;
+
+		img {
+			width: 100%;
+			padding: 5px;
+			transition: 0.3s;
+			filter: none;
+
+			&:not(.disable):hover {
+				filter: none;
+				box-shadow: 0px 0px 28px 7px #FFFFFF;
+				transition: 0.3s;
+			}
+		}
+	}
+
+
 }
 
-//--------------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------
 
 
 /* VERSION TABLETA */
@@ -228,9 +257,28 @@
 			@include parrafos;
 		}
 	}
+
+	/* DESHABILITAR HOVER IMAGENES GALERIAS */
+	.row {
+		margin: 3px;
+
+		img {
+			width: 100%;
+			padding: 5px;
+			transition: 0.3s;
+			filter: none;
+
+			&:not(.disable):hover {
+				filter: none;
+				box-shadow: 0px 0px 28px 7px #FFFFFF;
+				transition: 0.3s;
+			}
+		}
+	}
 }
 
-//---------------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------
 
 /* VERSION DESKTOP */
 @media (min-width:901px) {

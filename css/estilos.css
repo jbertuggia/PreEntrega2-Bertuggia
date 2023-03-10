@@ -1,4 +1,4 @@
-/* FONTS------------------------------------------------------------------------ */
+/* FONTS------------------------------------------------------------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap");
@@ -6,7 +6,7 @@
   font-family: "distant stroke";
   src: url(../fonts/Distant_Stroke.otf);
 }
-/* MIXINS --------------------------------------------------------------------------------*/ /* HEADER GENERAL------------------------------------------------------------------------- */
+/* MIXINS ------------------------------------------------------------------------------*/ /* HEADER GENERAL---------------------------------------------------------------------- */
 .flexHeader {
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   padding-bottom: 10px;
 }
 
-/* HEADER INDEX------------------------------------------------------------------------- */
+/* HEADER INDEX----------------------------------------------------------------------- */
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -90,7 +90,7 @@
   animation-iteration-count: initial;
 }
 
-/* FOOTER------------------------------------------------------------------------ */
+/* FOOTER----------------------------------------------------------------------------- */
 .flexFooter {
   width: 100%;
   display: flex;
@@ -133,33 +133,33 @@
   color: rgb(175, 175, 175);
 }
 
-/* RESET DE MARGIN Y PADDING------------------------------------------------------ */
+/* RESET DE MARGIN Y PADDING---------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY--------------------------------------------------------------------------- */
+/* BODY------------------------------------------------------------------------------- */
 body {
   background-color: rgb(32, 32, 32);
 }
 
-/* FLEX PRINCIPAL----------------------------------------------------------------- */
+/* FLEX PRINCIPAL--------------------------------------------------------------------- */
 .flexPrincipal {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
-/* FLEX INDEX -------------------------------------------------------------------- */
+/* FLEX INDEX ------------------------------------------------------------------------ */
 .flexIndex {
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
 }
 
-/* FLEX PAGINA ACERCA DE MI -------------------------------------------------------*/
+/* FLEX PAGINA ACERCA DE MI -----------------------------------------------------------*/
 .flexAcercaDe {
   display: flex;
   flex: 77vh;
@@ -201,7 +201,7 @@ body {
   line-height: 20px;
 }
 
-/* BOTON DE INSTAGRAM--------------------------------------------------------------- */
+/* BOTON DE INSTAGRAM----------------------------------------------------------------- */
 .botonInsta {
   position: fixed;
   bottom: 15px;
@@ -213,7 +213,7 @@ body {
   right: 10px;
 }
 
-/* BOTON DE INSTAGRAM INDEX---------------------------------------------------------- */
+/* BOTON DE INSTAGRAM INDEX----------------------------------------------------------- */
 .botonInstaIndex {
   margin: 0 0 10px 0;
   padding: 10px;
@@ -226,7 +226,7 @@ body {
   filter: invert(100%);
 }
 
-/* VIDEO DEL INDEX----------------------------------------------------------------- */
+/* VIDEO DEL INDEX-------------------------------------------------------------------- */
 .video {
   height: 95%;
   display: flex;
@@ -239,7 +239,7 @@ body {
   animation-duration: 8s;
 }
 
-/* NAVBAR BOOTSTRAP--------------------------------------------------------------------- */
+/* NAVBAR BOOTSTRAP------------------------------------------------------------------- */
 .navbar {
   background-color: rgb(32, 32, 32);
 }
@@ -263,7 +263,7 @@ body {
   border-radius: 6px;
 }
 
-/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES------------------------------------------- */
+/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES----------------------------------------- */
 .row {
   margin: 3px;
 }
@@ -274,9 +274,7 @@ body {
   filter: grayscale(1);
 }
 .row img:hover {
-  /* padding: 0; */
   filter: none;
-  /* box-shadow: 0px 0px 6px 6px #000 inset, 0px 0px 10px 1px #000000 inset; */
   box-shadow: 0px 0px 28px 7px #FFFFFF;
   transition: 0.3s;
 }
@@ -325,10 +323,9 @@ body {
   border: 1px solid white;
 }
 
-/* MEDIA QUERIES----------------------------------------------------------------------- */
 /* VERSION MOBILE */
 @media (max-width: 601px) {
-  /* FELX HEADER PRINCIPAL */
+  /* CONTENEDOR FLEX PRINCIPAL PAG INDEX */
   .flexPrincipal {
     display: flex;
     flex-flow: column wrap;
@@ -336,10 +333,6 @@ body {
   }
   .flexPrincipal h3 {
     margin: 0 0 10px 0;
-  }
-  /* FLEX HEADER GENERAL */
-  .flexHeader {
-    align-items: normal;
   }
   /* FLEX INDEX */
   .flexIndex {
@@ -350,6 +343,10 @@ body {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: normal;
+  }
+  /* CONTENEDOR FLEX PRINCIPAL RESTO DE PAGS */
+  .flexHeader {
     align-items: normal;
   }
   /* NAVBAR HEADER */
@@ -439,19 +436,33 @@ body {
     font-size: 15px;
     line-height: 20px;
   }
+  /* BOTON DE INSTAGRAM */
+  .botonInsta {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
+  .botonInsta img {
+    width: 40px;
+    bottom: 10px;
+    right: 10px;
+  }
+  /* DESHABILITAR HOVER IMAGENES GALERIAS */
+  .row {
+    margin: 3px;
+  }
+  .row img {
+    width: 100%;
+    padding: 5px;
+    transition: 0.3s;
+    filter: none;
+  }
+  .row img:not(.disable):hover {
+    filter: none;
+    box-shadow: 0px 0px 28px 7px #FFFFFF;
+    transition: 0.3s;
+  }
 }
-/* BOTON DE INSTAGRAM--------------------------------------------------------------- */
-.botonInsta {
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-}
-.botonInsta img {
-  width: 40px;
-  bottom: 10px;
-  right: 10px;
-}
-
 /* VERSION TABLETA */
 @media (min-width: 602px) and (max-width: 900px) {
   /* HEADER INDEX */
@@ -511,6 +522,21 @@ body {
     font-weight: lighter;
     font-size: 15px;
     line-height: 20px;
+  }
+  /* DESHABILITAR HOVER IMAGENES GALERIAS */
+  .row {
+    margin: 3px;
+  }
+  .row img {
+    width: 100%;
+    padding: 5px;
+    transition: 0.3s;
+    filter: none;
+  }
+  .row img:not(.disable):hover {
+    filter: none;
+    box-shadow: 0px 0px 28px 7px #FFFFFF;
+    transition: 0.3s;
   }
 }
 /* VERSION DESKTOP */
