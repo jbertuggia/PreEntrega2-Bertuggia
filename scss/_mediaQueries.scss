@@ -27,6 +27,17 @@
 		align-items: normal;
 	}
 
+	/* VIDEO DE PORTADA */
+	.video {
+		display: flex;
+		flex: 100%;
+		margin: 30px 0 15px 0;
+
+		video {
+			height: 220px;
+		}
+	}
+
 
 	/* CONTENEDOR FLEX PRINCIPAL RESTO DE PAGS */
 	.flexHeader {
@@ -64,19 +75,6 @@
 		align-items: center;
 	}
 
-
-	/* VIDEO DE PORTADA */
-	.video {
-		display: flex;
-		flex: 100%;
-		margin: 30px 0 15px 0;
-
-		video {
-			height: 250px;
-		}
-	}
-
-
 	/* FOOTER */
 	.navFooter {
 		display: none;
@@ -105,6 +103,8 @@
 		h2 {
 			margin: 10px;
 		}
+
+		
 	}
 
 
@@ -254,8 +254,6 @@
 	
 	/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES */
 	.row {
-		margin: 3px;
-
 		img {
 			width: 100%;
 			padding: 5px;
@@ -264,7 +262,7 @@
 
 			&:hover {
 				filter: none;
-				box-shadow: 0px 0px 28px 7px #FFFFFF;
+				box-shadow: 0px 0px 7px 5px #FFFFFF;
 				transition: 0.3s;
 			}
 		}
@@ -275,14 +273,18 @@
 //--------------------------------------------------------------------------------------
 
 /* RESOLUCION 1366X768 */
-@media (width: 1366px) and (height: 667px) {
+@media (width: 1366px) and (height: 665px) {
 
-
+	/* HEADER PAGINA INDEX */
+	
+	.headerIndex {
+		height: 94.5%;
+	}
 	/* PAG ACERCA DE MI */
 
 	.flexAcercaDe {
 		display: flex;
-		height: 451px;
+		height: 452px;
 		flex-flow: row nowrap;
 		justify-content: center;
 		align-items: center;
@@ -314,5 +316,6 @@
 		}
 	}
 }
+
 
 //--------------------------------------------------------------------------------------
