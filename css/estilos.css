@@ -93,6 +93,7 @@
 /* FOOTER----------------------------------------------------------------------------- */
 .flexFooter {
   width: 100%;
+  height: 5%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -162,7 +163,7 @@ body {
 /* FLEX PAGINA ACERCA DE MI -----------------------------------------------------------*/
 .flexAcercaDe {
   display: flex;
-  flex: 77vh;
+  height: 711px;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
@@ -171,13 +172,12 @@ body {
 .imagenYoUno {
   margin: 0 20px 0 0;
   display: flex;
-  height: 75vh;
   flex: 50%;
   justify-content: right;
   align-items: center;
 }
 .imagenYoUno img {
-  height: 35vh;
+  height: 315px;
   width: 80%;
   object-fit: cover;
 }
@@ -193,7 +193,7 @@ body {
   align-items: center;
 }
 .parrafoYo p {
-  width: 60%;
+  width: 55%;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: lighter;
@@ -228,7 +228,6 @@ body {
 
 /* VIDEO DEL INDEX-------------------------------------------------------------------- */
 .video {
-  height: 95%;
   display: flex;
   flex: 50%;
 }
@@ -271,12 +270,6 @@ body {
   width: 100%;
   padding: 5px;
   transition: 0.3s;
-  filter: grayscale(1);
-}
-.row img:hover {
-  filter: none;
-  box-shadow: 0px 0px 28px 7px #FFFFFF;
-  transition: 0.3s;
 }
 
 .col-xl-3 {
@@ -305,6 +298,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 67.5vh;
+  height: 623px;
 }
 .conteinerForm label {
   font-family: "Montserrat", sans-serif;
@@ -447,21 +441,6 @@ body {
     bottom: 10px;
     right: 10px;
   }
-  /* DESHABILITAR HOVER IMAGENES GALERIAS */
-  .row {
-    margin: 3px;
-  }
-  .row img {
-    width: 100%;
-    padding: 5px;
-    transition: 0.3s;
-    filter: none;
-  }
-  .row img:not(.disable):hover {
-    filter: none;
-    box-shadow: 0px 0px 28px 7px #FFFFFF;
-    transition: 0.3s;
-  }
 }
 /* VERSION TABLETA */
 @media (min-width: 602px) and (max-width: 900px) {
@@ -523,7 +502,14 @@ body {
     font-size: 15px;
     line-height: 20px;
   }
-  /* DESHABILITAR HOVER IMAGENES GALERIAS */
+}
+/* VERSION DESKTOP */
+@media (min-width: 901px) {
+  /* LOGO CAMARA NAVBAR */
+  .navbar-brand img {
+    display: none;
+  }
+  /* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES */
   .row {
     margin: 3px;
   }
@@ -531,19 +517,49 @@ body {
     width: 100%;
     padding: 5px;
     transition: 0.3s;
-    filter: none;
+    filter: grayscale(1);
   }
-  .row img:not(.disable):hover {
+  .row img:hover {
     filter: none;
     box-shadow: 0px 0px 28px 7px #FFFFFF;
     transition: 0.3s;
   }
 }
-/* VERSION DESKTOP */
-@media (min-width: 901px) {
-  /* LOGO CAMARA NAVBAR */
-  .navbar-brand img {
-    display: none;
+/* RESOLUCION 1366X768 */
+@media (width: 1366px) and (height: 667px) {
+  /* PAG ACERCA DE MI */
+  .flexAcercaDe {
+    display: flex;
+    height: 451px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenYoUno {
+    margin: 0 20px 0 0;
+    display: flex;
+    flex: 50%;
+    justify-content: right;
+    align-items: center;
+  }
+  .imagenYoUno img {
+    height: 380px;
+    width: 80%;
+    object-fit: cover;
+  }
+  .parrafoYo {
+    display: flex;
+    flex: 50%;
+    justify-content: left;
+    align-items: center;
+  }
+  .parrafoYo p {
+    width: 62%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 

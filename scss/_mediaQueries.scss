@@ -147,40 +147,19 @@
 		}
 	}
 
-	
+
 	/* BOTON DE INSTAGRAM */
 	.botonInsta {
 		position: fixed;
 		bottom: 5px;
 		right: 5px;
-	
+
 		img {
 			width: 40px;
 			bottom: 10px;
 			right: 10px;
 		}
 	}
-
-
-	/* DESHABILITAR HOVER IMAGENES GALERIAS */
-	.row {
-		margin: 3px;
-
-		img {
-			width: 100%;
-			padding: 5px;
-			transition: 0.3s;
-			filter: none;
-
-			&:not(.disable):hover {
-				filter: none;
-				box-shadow: 0px 0px 28px 7px #FFFFFF;
-				transition: 0.3s;
-			}
-		}
-	}
-
-
 }
 
 
@@ -257,24 +236,6 @@
 			@include parrafos;
 		}
 	}
-
-	/* DESHABILITAR HOVER IMAGENES GALERIAS */
-	.row {
-		margin: 3px;
-
-		img {
-			width: 100%;
-			padding: 5px;
-			transition: 0.3s;
-			filter: none;
-
-			&:not(.disable):hover {
-				filter: none;
-				box-shadow: 0px 0px 28px 7px #FFFFFF;
-				transition: 0.3s;
-			}
-		}
-	}
 }
 
 
@@ -290,4 +251,68 @@
 		}
 	}
 
+	
+	/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES */
+	.row {
+		margin: 3px;
+
+		img {
+			width: 100%;
+			padding: 5px;
+			transition: 0.3s;
+			filter: grayscale(1);
+
+			&:hover {
+				filter: none;
+				box-shadow: 0px 0px 28px 7px #FFFFFF;
+				transition: 0.3s;
+			}
+		}
+	}
 }
+	
+
+//--------------------------------------------------------------------------------------
+
+/* RESOLUCION 1366X768 */
+@media (width: 1366px) and (height: 667px) {
+
+
+	/* PAG ACERCA DE MI */
+
+	.flexAcercaDe {
+		display: flex;
+		height: 451px;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.imagenYoUno {
+		margin: 0 20px 0 0;
+		display: flex;
+		flex: 50%;
+		justify-content: right;
+		align-items: center;
+
+		img {
+			height: 380px;
+			width: 80%;
+			object-fit: cover;
+		}
+	}
+
+	.parrafoYo {
+		display: flex;
+		flex: 50%;
+		justify-content: left;
+		align-items: center;
+
+		p {
+			width: 62%;
+			@include parrafos;
+		}
+	}
+}
+
+//--------------------------------------------------------------------------------------
