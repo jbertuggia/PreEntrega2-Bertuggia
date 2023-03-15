@@ -88,7 +88,8 @@
 	}
 
 	.infoFooter {
-		font-size: 8px;
+		font-size: 12px;
+		text-align: center;
 	}
 
 
@@ -104,7 +105,7 @@
 			margin: 10px;
 		}
 
-		
+
 	}
 
 
@@ -141,7 +142,7 @@
 
 		p {
 			padding: 15px;
-			margin: 10px;
+			margin: 10px 10px 50px 10px;
 			width: 90%;
 			@include parrafos;
 		}
@@ -251,7 +252,7 @@
 		}
 	}
 
-	
+
 	/* GALERIA BOOTSTRAP DE FOTOS BOOKS Y RECITALES */
 	.row {
 		img {
@@ -268,7 +269,7 @@
 		}
 	}
 }
-	
+
 
 //--------------------------------------------------------------------------------------
 
@@ -276,10 +277,11 @@
 @media (width: 1366px) and (height: 665px) {
 
 	/* HEADER PAGINA INDEX */
-	
+
 	.headerIndex {
 		height: 94.5%;
 	}
+
 	/* PAG ACERCA DE MI */
 
 	.flexAcercaDe {
@@ -298,7 +300,7 @@
 		align-items: center;
 
 		img {
-			height: 380px;
+			height: 379px;
 			width: 80%;
 			object-fit: cover;
 		}
@@ -311,7 +313,7 @@
 		align-items: center;
 
 		p {
-			width: 62%;
+			width: 67%;
 			@include parrafos;
 		}
 	}

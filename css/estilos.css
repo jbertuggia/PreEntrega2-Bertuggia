@@ -177,7 +177,7 @@ body {
   align-items: center;
 }
 .imagenYoUno img {
-  height: 315px;
+  height: 350px;
   width: 80%;
   object-fit: cover;
 }
@@ -193,7 +193,7 @@ body {
   align-items: center;
 }
 .parrafoYo p {
-  width: 55%;
+  width: 56%;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: lighter;
@@ -380,7 +380,8 @@ body {
     font-size: 10px;
   }
   .infoFooter {
-    font-size: 8px;
+    font-size: 12px;
+    text-align: center;
   }
   /* ENCABEZADO DEL PAG CONTACTO */
   .conteinerForm {
@@ -421,7 +422,7 @@ body {
   }
   .parrafoYo p {
     padding: 15px;
-    margin: 10px;
+    margin: 10px 10px 50px 10px;
     width: 90%;
     font-family: "Montserrat", sans-serif;
     color: white;
@@ -543,7 +544,7 @@ body {
     align-items: center;
   }
   .imagenYoUno img {
-    height: 380px;
+    height: 379px;
     width: 80%;
     object-fit: cover;
   }
@@ -554,7 +555,7 @@ body {
     align-items: center;
   }
   .parrafoYo p {
-    width: 62%;
+    width: 67%;
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: lighter;
